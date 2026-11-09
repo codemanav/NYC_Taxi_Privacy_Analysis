@@ -6,6 +6,3 @@ __pycache__/
 yellow_taxi_data/
 yellow_tripdata_*.parquet
 *.log
-
-# Course materials kept locally only
-Privacy Project Progress Discussion*.pdf

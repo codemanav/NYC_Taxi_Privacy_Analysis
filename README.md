@@ -66,6 +66,8 @@ download_data.py
   `eda_yellow_tripdata.py`).
 - `fare_lattice_heatmaps_all.png` - fare-model accuracy across the
   generalization lattice (from `heatmap.py`).
+- `docs/project_progress_discussion.pdf` - slides from the project progress
+  discussion.
 
 ## Install dependencies
 
