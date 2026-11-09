@@ -17,7 +17,7 @@ sns.set_palette("husl")
 
 # Load and prepare data
 print("=== LOADING NYC TAXI DATA ===")
-df = pd.read_parquet('./yellow_tripdata_2025-01.parquet')
+df = pd.read_parquet('yellow_taxi_data/yellow_tripdata_2025-01.parquet')
 print(f"Original dataset: {len(df):,} records")
 
 # Sample for analysis (adjust as needed)

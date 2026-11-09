@@ -5,6 +5,8 @@ measures re-identification risk in publicly released trip records using
 k-anonymity, l-diversity, t-closeness, exploratory analysis, attack scenarios,
 and privacy visualizations.
 
+**Author:** Manav Shah
+
 ## Research questions
 
 - How easily can trip records be re-identified from quasi-identifiers?
@@ -25,8 +27,9 @@ python download_data.py
 ```
 
 The scripts expect the downloaded files under `yellow_taxi_data/`. This
-directory is ignored by Git. The included CSV summaries, sample data, plots,
-and reports are derived outputs from prior runs.
+directory is ignored by Git. The single-month scripts default to
+`yellow_taxi_data/yellow_tripdata_2025-01.parquet`. The included CSV
+summaries, sample data, plots, and reports are derived outputs from prior runs.
 
 ## Analysis workflow
 
@@ -40,6 +43,8 @@ download_data.py
         +--> analysis.py / k_anonymity_analysis.py
         |
         +--> fare_lattice.py --> heatmap.py
+        |
+        +--> inspect_schema.py / check_fare_lattice.py   (quick checks)
 ```
 
 - `batch_eda.py` summarizes monthly trip distributions and trends.
@@ -48,7 +53,19 @@ download_data.py
 - `k_anonymity_analysis.py` runs a focused single-file analysis.
 - `fare_lattice.py` evaluates privacy-aware fare generalization.
 - `heatmap.py` visualizes fare-lattice results.
+- `inspect_schema.py` writes `sample.csv` and `schema.csv` for one month.
+- `check_fare_lattice.py` runs a single baseline fare model as a quick check
+  before the full lattice.
 - `presentation_slides.md` and the analysis summaries document findings.
+
+## Figures
+
+- `docs/eda_trends_2019_2025.jpeg` - monthly trends, January 2019 to
+  August 2025 (from `batch_eda.py`).
+- `docs/eda_jan_2025.jpeg` - January 2025 EDA panels (from
+  `eda_yellow_tripdata.py`).
+- `fare_lattice_heatmaps_all.png` - fare-model accuracy across the
+  generalization lattice (from `heatmap.py`).
 
 ## Install dependencies
 

@@ -15,7 +15,7 @@ RANDOM_STATE = 42
 # 1. LOAD & BASIC PREPROCESSING
 # ==============================
 
-def load_and_clean(path: str = "./yellow_tripdata_2025-01.parquet") -> pd.DataFrame:
+def load_and_clean(path: str = "yellow_taxi_data/yellow_tripdata_2025-01.parquet") -> pd.DataFrame:
     """
     Load one month of yellow taxi data and do light cleaning + feature engineering
     good enough for fare prediction + generalization later.

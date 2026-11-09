@@ -4,7 +4,7 @@ import seaborn as sns
 import numpy as np
 
 # Load data
-df = pd.read_parquet('yellow_tripdata_2025-01.parquet')
+df = pd.read_parquet('yellow_taxi_data/yellow_tripdata_2025-01.parquet')
 
 print("="*80)
 print("NYC YELLOW TAXI DATA - EXPLORATORY DATA ANALYSIS")

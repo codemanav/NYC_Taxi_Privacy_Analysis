@@ -3,7 +3,7 @@ import numpy as np
 from datetime import datetime
 
 # Load data
-df = pd.read_parquet('yellow_tripdata_2025-01.parquet')
+df = pd.read_parquet('yellow_taxi_data/yellow_tripdata_2025-01.parquet')
 
 print("="*80)
 print("K-ANONYMITY ANALYSIS - NYC TAXI DATA")
