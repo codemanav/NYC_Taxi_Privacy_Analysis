@@ -78,7 +78,8 @@ pip install -r requirements.txt
 ```
 
 The scripts use pandas, PyArrow, NumPy, SciPy, scikit-learn, matplotlib,
-seaborn, requests, and tqdm.
+seaborn, requests, and tqdm. Versions are pinned to ranges starting at the
+releases the scripts were tested with (Python 3.11).
 
 ## Key findings
 

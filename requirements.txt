@@ -1,9 +1,10 @@
-matplotlib
-numpy
-pandas
-pyarrow
-requests
-scikit-learn
-scipy
-seaborn
-tqdm
+# Tested with Python 3.11 and the lower bound of each range.
+matplotlib>=3.11.2,<4
+numpy>=2.4.6,<3
+pandas>=3.1.1,<4
+pyarrow>=26.0.1,<27
+requests>=2.34.2,<3
+scikit-learn>=1.9.1,<2
+scipy>=1.17.1,<2
+seaborn>=0.13.2,<0.14
+tqdm>=4.70.1,<5
